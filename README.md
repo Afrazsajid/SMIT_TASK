@@ -7,8 +7,8 @@ Welcome to the SMIT_TASk repository! This repository contains a collection of TA
 ### 1. Todo App
 
 - **Description:** A simple To-Do List application that allows users to manage their tasks effectively.
-- **Live Link:** [Todo App Site](#https://smittask.netlify.app/todo/)
-- **Repo Link:** [Todo App Repository](#https://github.com/Afrazsajid/SMIT_TASK/tree/main/todo)
+- **Live Link:** [Todo App Site](https://smittask.netlify.app/todo/)
+- **Repo Link:** [Todo App Repository](https://github.com/Afrazsajid/SMIT_TASK/tree/main/todo)
 
 
 ## Contributing
