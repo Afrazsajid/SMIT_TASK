@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KAAM KARO</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="shortcut icon" href="https://res.cloudinary.com/dsfm7zxhg/image/upload/v1725907044/check_6972727_qpf0in.png" type="image/x-icon">
+</head>
+<body>
+    <!-- Header -->
+    <header class="app-header">
+        <h1>To-Do App</h1>
+        <button class="add-task-btn">Add Task</button>
+    </header>
+
+    <!-- Main Task Section -->
+    <main>
+        <section class="task-section">
+            <h2>Tasks</h2>
+            <div class="task-list" id="task-list">
+                <!-- Tasks will be inserted here dynamically -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Task Form Modal -->
+   
+    
+        <!-- Task Form Modal -->
+        <div class="task-modal" id="task-modal">
+            <div class="modal-content">
+                <h3>Add a New Task</h3>
+                <form id="task-form">
+                    <label for="task-name">Task Name</label>
+                    <input type="text" id="task-name" placeholder="What needs to be done?" required>
+    
+                    <label for="task-due-date">Due Date</label>
+                    <input type="date" id="task-due-date" required>
+    
+                    <label for="task-due-time">Due Time</label>
+                    <input type="time" id="task-due-time" required>
+    
+                    <div class="form-buttons">
+                        <button type="submit">Add Task</button>
+                        <button type="button" id="close-modal">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    
+   
+    
+
+    <script src="js/index.js"></script>
+</body>
+</html>

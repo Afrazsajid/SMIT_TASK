@@ -1,0 +1,231 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f5f8fa;
+    color: #14171a;
+}
+
+.app-header {
+    background-color: #1da1f2;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.add-task-btn {
+    background-color: #84d2ff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-task-btn:hover {
+    background-color: #0a85d4;
+}
+
+.task-section {
+    padding: 20px;
+}
+
+.task-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.task-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.remove-btn{
+    padding: 12px 18px;
+    font-size:1.2rem;
+    border-radius: 8px;
+    color: white;
+    background-color: red;
+}
+
+.task-card.urgent {
+    border-left: 5px solid #ff0033;
+    background-color: #ee5b78;
+}
+
+.task-card .task-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.completed-task {
+    opacity: 0.6;
+    text-decoration: line-through;
+}
+
+.task-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 40px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-20px);
+    transition: transform 0.3s ease;
+}
+
+h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 18px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input[type="text"], input[type="date"], input[type="time"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 25px; /* Increased spacing between form elements */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="date"]:focus, input[type="time"]:focus {
+    border-color: #1da1f2;
+    outline: none;
+}
+
+button[type="submit"], button[type="button"] {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 18px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"] {
+    background-color: #1da1f2;
+    color: white;
+}
+
+button[type="submit"]:hover {
+    background-color: #0a85d4;
+}
+
+button[type="button"] {
+    background-color: #ff0033;
+    color: white;
+    margin-top: 10px;
+}
+
+button[type="button"]:hover {
+    background-color: #cc0029;
+}
+
+/* Dark Mode Support */
+.dark-mode {
+    background-color: #14171a;
+    color: #f5f8fa;
+}
+
+.dark-mode .app-header {
+    background-color: #14171a;
+    color: #f5f8fa;
+}
+
+.dark-mode .task-card {
+    background-color: #657786;
+}
+
+.dark-mode .modal-content {
+    background-color: #192734;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .modal-content {
+        padding: 20px;
+        width: 95%;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    input[type="text"], input[type="date"], input[type="time"] {
+        font-size: 14px;
+    }
+
+    button[type="submit"], button[type="button"] {
+        font-size: 16px;
+    }
+}
+
+/* Smooth fade-out animation */
+.task-card.removing {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+
+/* Responsive Design for screens 385px and smaller */
+@media (max-width: 385px) {
+    .modal-content {
+        padding: 10px;
+        width: 95%;
+    }
+
+    h3 {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    label {
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
+
+    input[type="text"], input[type="date"], input[type="time"] {
+        font-size: 12px;
+        padding: 8px;
+        margin-bottom: 15px; /* Adjusted spacing for smaller screens */
+    }
+
+    button[type="submit"], button[type="button"] {
+        font-size: 14px;
+        padding: 10px 0;
+    }
+}
