@@ -10,6 +10,18 @@ Welcome to the SMIT_TASk repository! This repository contains a collection of TA
 - **Live Link:** [Todo App Site](https://smittask.netlify.app/todo/)
 - **Repo Link:** [Todo App Repository](https://github.com/Afrazsajid/SMIT_TASK/tree/main/todo)
 
+### 2. Dictionary App
+
+- **Description:** A simple To-Do List application that allows users to manage their tasks effectively.
+- **Live Link:** [Todo App Site](https://smittask.netlify.app/dictionary/)
+- **Repo Link:** [Todo App Repository](https://github.com/Afrazsajid/SMIT_TASK/tree/main/dictionary)
+
+### 3. Dictionary App
+
+- **Description:** A simple To-Do List application that allows users to manage their tasks effectively.
+- **Live Link:** [Todo App Site](https://smittask.netlify.app/portal/)
+- **Repo Link:** [Todo App Repository](https://github.com/Afrazsajid/SMIT_TASK/tree/main/portal)
+
 
 ## Contributing
 
