@@ -45,7 +45,7 @@ function clasInpHandle(){
         });
 
         // Clear input field
-        classInput.value = "";
+        // classInput.value = "";
         assignmentSec.style.display="block"
         
 
