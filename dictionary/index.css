@@ -1,0 +1,129 @@
+/* index.css */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: white;
+    width: 100%;
+    max-width: 700px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 32px;
+    color: #2c3e50;
+}
+
+#search-bar {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+#search-bar:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 8px rgba(52, 152, 219, 0.4);
+}
+
+main {
+    padding-top: 20px;
+}
+
+.result-item {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    background-color: #fafafa;
+}
+
+.result-item h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #2980b9;
+}
+
+.phonetic {
+    font-size: 18px;
+    font-style: italic;
+    color: #7f8c8d;
+}
+
+.phonetics audio {
+    margin-top: 10px;
+    display: block;
+}
+
+.definition {
+    margin-top: 20px;
+}
+
+.definition strong {
+    color: #2c3e50;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+.definition ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    color: #34495e;
+}
+
+.definition li {
+    margin-bottom: 10px;
+}
+
+.example {
+    font-style: italic;
+    color: #7f8c8d;
+}
+#results {
+    min-height: 200px; /* Adjust this value as per your design needs */
+    padding-top: 20px;
+    transition: min-height 0.5s ease-in-out; /* Smooth transition when results are shown */
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    #search-bar {
+        font-size: 14px;
+    }
+
+    .result-item h2 {
+        font-size: 24px;
+    }
+}
