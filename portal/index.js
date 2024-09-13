@@ -64,19 +64,26 @@ async function assLinkHandle() {
 }
 
 
-
-
-
-
-
-function clasInpHandle(){
-    const className = classInput.value.trim();
-    fetchClassAssignments().then(fetchedData => {
+async function Update() {
+    console.log(1)
+    await fetchClassAssignments().then(fetchedData => {
         classes = fetchedData; // Update the classes object with data from API
         console.log("Classes object:", classes); // Log the classes object to confirm it's properly set
       
         // You can place other synchronous actions here that depend on `classes`
       });
+    
+    
+}
+
+
+
+
+async function clasInpHandle(){
+    const className = classInput.value.trim();
+    await Update()
+    console.log(2)
+  
   
 
     
