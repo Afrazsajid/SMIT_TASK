@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Class Links</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        form {
+            margin: 0 auto;
+            max-width: 600px;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Add Class Links</h1>
+    <form id="addForm">
+        <label for="classNames">Class Names (comma separated):</label>
+        <input type="text" id="classNames" name="classNames" required>
+        <label for="links">Links (comma separated):</label>
+        <input type="text" id="links" name="links" required>
+        <button type="submit">Add</button>
+    </form>
+
+    <script>
+// Replace with your Google Apps Script Web App URL
+const scriptURL = 'https://script.google.com/macros/s/AKfycbxnXHUzGn09t42YOuoJQkTSYMb9AD6IenY1xfI6U2EEBmTOY8rpBXpCJ46S_b3AIe4iWQ/exec';
+
+// Define the data you want to send to Google Sheets
+const data = {
+  className: 'Class 101',
+  link1: 'https://example.com/assignment1',
+  link2: 'https://example.com/assignment2'
+};
+
+// Send a POST request to the Google Apps Script Web App
+fetch(scriptURL, {
+  method: 'POST',
+  mode: 'no-cors', // Disable CORS
+  headers: {
+    'Content-Type': 'application/json',
+  },
+  body: JSON.stringify(data),
+})
+.then(response => {
+  console.log('Data sent, but response not available due to no-cors mode.');
+})
+.catch(error => {
+  console.error('Error:', error);
+});
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashcards App</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Flashcards App</h1>
+            <button id="add-category-btn">Add Category</button>
+            <button id="add-flashcard-btn">Add Flashcard</button>
+        </header>
+        <main>
+            <div id="categories-container">
+                <h2>Categories</h2>
+                <ul id="categories-list">
+                    <!-- Categories will be injected here -->
+                </ul>
+            </div>
+            <div id="flashcards-container">
+                <h2>Flashcards</h2>
+                <ul id="flashcards-list">
+                    <!-- Flashcards will be injected here -->
+                </ul>
+            </div>
+        </main>
+    </div>
+    <div id="overlay" class="overlay">
+        <div class="modal">
+            <h2 id="modal-title">Modal</h2>
+            <form id="modal-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="description">Description:</label>
+                    <input type="text" id="description" name="description">
+                </div>
+                <button type="submit">Save</button>
+                <button type="button" id="close-modal-btn">Cancel</button>
+            </form>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
