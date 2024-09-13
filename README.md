@@ -16,8 +16,7 @@ Welcome to the SMIT_TASk repository! This repository contains a collection of TA
 - **Live Link:** [Dictionary App Site](https://smittask.netlify.app/dictionary/)
 - **Repo Link:** [Dictionary App Repository](https://github.com/Afrazsajid/SMIT_TASK/tree/main/dictionary)
 
-### 3. Dictionary App
-
+### 3. Assignment tracker 
 - **Description:** A simple To-Do List application that allows users to manage their tasks effectively.
 - **Live Link:** [Assignmnets tracker App Site](https://smittask.netlify.app/portal/)
 - **Repo Link:** [Assignmnets tracker App Repository](https://github.com/Afrazsajid/SMIT_TASK/tree/main/portal)
