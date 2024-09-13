@@ -20,7 +20,7 @@ function addAss(link){
 `;
 
 // Insert the new assignment into the list
-assignmentList.insertAdjacentHTML('beforeend', listItemHTML);
+assignmentList.insertAdjacentHTML('afterbegin', listItemHTML);
 
 // Clear the input field
 assignmentInput.value = "";
